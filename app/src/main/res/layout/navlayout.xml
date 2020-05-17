@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/Hi"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:background="@color/colorPrimary"
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_100" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_addBussinessBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:alpha="0.7"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:id="@+id/addBussinessBtn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/img_addBussinessBtn"
+            android:drawableRight="@drawable/next"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:background="@android:color/transparent"
+            android:text="My Profile"
+            android:textAllCaps="false"
+            android:textColor="#4a4f4c"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#d4d4d4"
+        android:visibility="visible" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:alpha="0.7"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:id="@+id/changepass"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="2dp"
+            android:drawableRight="@drawable/next"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:background="@android:color/transparent"
+            android:text="Change Password"
+            android:textAllCaps="false"
+            android:textColor="#4a4f4c"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#d4d4d4"
+        android:visibility="visible" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:alpha="0.7"
+            android:visibility="gone"
+             />
+
+        <Button
+            android:id="@+id/signout"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="2dp"
+
+            android:drawableRight="@drawable/next"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:background="@android:color/transparent"
+            android:text="Sign Out"
+            android:textAllCaps="false"
+            android:textColor="#4a4f4c"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#d4d4d4"
+        android:visibility="visible" />
+</LinearLayout>

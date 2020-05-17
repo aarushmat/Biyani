@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f7cc4a</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="Background">#FF87D3EC</color>
+    <color name="mix1">#4eacf4</color>
+    <color name="mix2">#3737B1</color>
+    <color name="oldpurple">#FF1C6899</color>
+    <color name="purple">#8a7fff</color>
+    <color name="white">#FFFF</color>
+    <color name="offwhite">#D8D8D8</color>
+    <color name="storke">#FF1C6899</color>
+    <color name="red">#FDE20E0E</color>
+    <color name="back">#CFCDCD</color>
+    <color name="dark_grey">#706F6F</color>
+    <color name="light">#F5CECDCD</color>
+    <color name="cursor">#1B1B1B</color>
+    <color name="colorFAB1">#2196F3</color>
+    <color name="colorFAB2">#E040FB</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="darkpurple">#446df4</color>
+    <!--<color name="lightpurple">#7a75b5</color>-->
+    <color name="lightpurple">#144491</color>
+    <color name="lightorange">#F25F5B</color>
+    <color name="darkorange">#F58369</color>
+    <color name="lightgreen">#8dea70</color>
+    <color name="darkgreen">#3bba14</color>
+    <color name="notidarkgreen">#cadd81</color>
+    <color name="affairdark">#ff70b9</color>
+    <color name="affairlight">#ff99cd</color>
+    <color name="darkblue">#1297ea</color>
+    <color name="lightblue">#4cb9ff</color>
+    <color name="black">#000</color>
+    <color name="orange">#f7cc4a</color>
+    <color name="semiTransparentColor">#20ffffff</color>
+</resources>

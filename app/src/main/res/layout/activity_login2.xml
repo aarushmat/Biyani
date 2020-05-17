@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <ImageView
+        android:id="@+id/imgbg"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/cv3" />
+
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guru+"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto_medium"
+        android:textSize="50sp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        tools:ignore="RtlCompat" />
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Sign IN!"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:fontFamily="@font/roboto_bold"-->
+    <!--android:textSize="@dimen/sp_36"-->
+    <!--android:layout_below="@+id/welcome"-->
+    <!--tools:ignore="RtlCompat"/>-->
+
+    <!--<ScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:scrollbars="vertical"-->
+    <!--android:layout_below="@id/imgbg"-->
+    <!--android:scrollbarFadeDuration="0"-->
+    <!--&gt;-->
+    <androidx.core.widget.NestedScrollView
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/imgbg">
+        <RelativeLayout
+            android:background="#fff"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/imgbg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ProgressBar
+                android:id="@+id/progressBar_login"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:visibility="invisible"
+                android:layout_gravity="center_vertical"
+                android:layout_centerInParent="true"
+                android:indeterminateTint="@color/colorPrimary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+            <!--<ImageView-->
+            <!--android:id="@+id/imgbg"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/cv3" />-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/email_id"
+                android:layout_marginStart="@dimen/dp_40"
+                android:layout_marginEnd="@dimen/dp_40"
+                android:hint="User Name"
+                android:textColorHint="@color/dark_grey"
+                app:boxStrokeColor="@color/Background"
+                app:boxCornerRadiusTopStart="@dimen/dp_20"
+                app:boxCornerRadiusBottomEnd="@dimen/dp_20"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/input_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/cursor"
+                    android:importantForAutofill="no"
+                    android:textSize="@dimen/sp_16"
+                    android:textCursorDrawable="@color/cursor"
+                    android:fontFamily="@font/roboto_medium"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/passrd_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/email_id"
+                >
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/passrd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_40"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_marginEnd="@dimen/dp_40"
+                    app:boxCornerRadiusTopStart="@dimen/dp_20"
+                    app:boxCornerRadiusBottomEnd="@dimen/dp_20"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:textColorHint="@color/dark_grey"
+                    android:hint="PASSWORD"
+                    app:boxStrokeColor="@color/Background"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/input_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:importantForAutofill="no"
+                        android:textColor="@color/cursor"
+                        android:textSize="@dimen/sp_15"
+                        android:inputType="textPassword"
+                        android:textCursorDrawable="@color/cursor"
+                        android:fontFamily="@font/roboto_medium"/>
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <ImageView
+                    android:id="@+id/passimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/pass"
+                    app:layout_constraintEnd_toEndOf="@+id/passrd"
+                    app:layout_constraintTop_toTopOf="@+id/passrd"
+                    app:layout_constraintBottom_toBottomOf="@+id/passrd"
+                    android:layout_marginRight="10dp"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <Switch
+                android:layout_marginStart="@dimen/dp_40"
+                android:id="@+id/switchRemember"
+                android:layout_marginTop="@dimen/dp_20"
+                android:checked="true"
+                android:theme="@style/SwitchTheme"
+                android:layout_below="@+id/passrd_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:layout_toRightOf="@+id/switchRemember"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Remember me"
+                android:id="@+id/rember"
+                android:layout_marginLeft="@dimen/dp_4"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_below="@+id/passrd_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:id="@+id/PassReset"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/passrd_layout"
+                android:layout_toRightOf="@+id/switchRemember">
+                <TextView
+                    android:id="@+id/PassReset1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:layout_marginEnd="@dimen/dp_40"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="Forgot password?"
+                    tools:ignore="RtlCompat"
+
+                    />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/Login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Log in"
+                android:layout_marginStart="100dp"
+                android:layout_marginEnd="100dp"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/PassReset"
+                android:layout_centerHorizontal="true"
+                android:shadowColor="@color/dark_grey"
+                android:paddingStart="@dimen/dp_30"
+                android:outlineSpotShadowColor="@color/mix2"
+                android:paddingEnd="@dimen/dp_30"
+                android:background="@drawable/button_background"
+                android:textAllCaps="false"/>
+
+            <!--            <LinearLayout-->
+            <!--                android:id="@+id/layout"-->
+            <!--                android:layout_below="@id/Login"-->
+            <!--                android:layout_centerHorizontal="true"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_marginTop="@dimen/dp_20"-->
+            <!--                android:layout_height="0dp">-->
+
+            <!--                <Button-->
+            <!--                    android:id="@+id/facebook_login"-->
+            <!--                    android:layout_width="@dimen/dp_50"-->
+            <!--                    android:layout_height="@dimen/dp_50"-->
+            <!--                    />-->
+
+            <!--                <Button-->
+            <!--                    android:id="@+id/google_login"-->
+            <!--                    android:layout_marginLeft="@dimen/dp_30"-->
+            <!--                    android:layout_width="@dimen/dp_50"-->
+            <!--                    android:layout_height="@dimen/dp_50"-->
+            <!--                    android:background="@drawable/ic_google_plus"/>-->
+
+            <!--            </LinearLayout>-->
+            <LinearLayout
+                android:layout_below="@+id/Login"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_height="wrap_content">
+
+                <TextView
+
+                    android:id="@+id/sign_text"
+
+                    android:layout_width="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_8"
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_height="wrap_content"
+                    android:text="@string/don_t_have_an_account"/>
+                <TextView
+                    android:id="@+id/sign_Up_link"
+                    android:layout_width="wrap_content"
+                    android:padding="@dimen/dp_8"
+
+                    android:layout_marginBottom="@dimen/dp_8"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/mix2"
+                    android:text="@string/sign_up"/>
+            </LinearLayout>
+            <!--</ScrollView>-->
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>
